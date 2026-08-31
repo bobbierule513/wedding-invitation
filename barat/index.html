@@ -179,15 +179,15 @@
         border:1px solid rgba(201,166,89,.45);
         background:rgba(212,175,95,.05);
       }
-      .count-num{position:relative;height:26px;overflow:hidden;font-size:26px;line-height:1;color:var(--gold-bright);font-weight:500;font-variant-numeric:tabular-nums}
+      .count-num{position:relative;height:26px;overflow:hidden;font-size:26px;line-height:1;color:var(--gold-bright);font-weight:500;font-variant-numeric:lining-nums tabular-nums}
       .count-num .digit{display:block}
       .count-num .digit.out{position:absolute;left:0;right:0}
       .count-unit{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:4px}
       @media (prefers-reduced-motion:no-preference){
         .count-num .digit.in{animation:rollIn .55s cubic-bezier(.23,1,.32,1) both}
         .count-num .digit.out{animation:rollOut .55s cubic-bezier(.6,.04,.98,.34) both}
-        @keyframes rollIn{from{opacity:0;transform:translateY(115%)}to{opacity:1;transform:none}}
-        @keyframes rollOut{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-115%)}}
+        @keyframes rollIn{from{opacity:0;transform:translateY(150%)}to{opacity:1;transform:none}}
+        @keyframes rollOut{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-150%)}}
       }
       @media (prefers-reduced-motion:reduce){
         .count-num .digit.out{display:none}
